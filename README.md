@@ -33,8 +33,8 @@ Here's a walkthrough of implemented user stories:
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
-
-Not yet finished
+PLEASE NOTE:
+I am not yet finished I will be improving this app throughout the week.
 
 ## Open-source libraries used
 
