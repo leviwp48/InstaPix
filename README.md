@@ -28,13 +28,13 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://github.com/leviwp48/InstaPix/blob/master/InstaPix.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
-
-Not yet finished
+PLEASE NOTE:
+I am not yet finished I will be improving this app throughout the week.
 
 ## Open-source libraries used
 
