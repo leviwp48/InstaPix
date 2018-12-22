@@ -19,10 +19,9 @@
             android:layout_width="40dp"
             android:layout_height="50dp"
             android:layout_gravity="left"
-            android:scaleType="centerCrop"
-            android:src="@mipmap/camera"
             android:background="@null"
-            />
+            android:scaleType="centerCrop"
+            android:src="@mipmap/camera" />
 
         <ImageView
             android:layout_width="wrap_content"
@@ -31,19 +30,33 @@
             android:src="@mipmap/ig_logo" />
     </android.support.v7.widget.Toolbar>
 
-    <FrameLayout
+    <View
         android:layout_width="match_parent"
-        android:layout_height="400dp">
+        android:layout_height="1dp"
+        android:background="#000000" />
 
-        <android.support.v7.widget.RecyclerView
-            android:layout_width="match_parent"
-            android:layout_height="400dp" />
+    <FrameLayout
+        android:id="@+id/flContainer"
+        android:layout_width="match_parent"
+        android:layout_height="496dp">
+
     </FrameLayout>
 
     <Button
         android:id="@+id/btnLogout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:gravity="bottom|center"
         android:text="Logout" />
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:itemIconTint="@animator/bottom_nav_icon_color"
+        app:itemTextColor="@animator/bottom_nav_icon_color"
+        app:menu="@menu/menu_bottom_navigation" />
 
 </LinearLayout>

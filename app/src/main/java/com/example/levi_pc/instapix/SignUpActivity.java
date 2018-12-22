@@ -44,8 +44,6 @@ public class SignUpActivity extends AppCompatActivity {
         user.setUsername(username);
         user.setPassword(password);
         user.setEmail(email);
-        // Set custom properties
-        user.put("phone", "650-253-0000");
         // Invoke signUpInBackground
         user.signUpInBackground(new SignUpCallback() {
             public void done(ParseException e) {
