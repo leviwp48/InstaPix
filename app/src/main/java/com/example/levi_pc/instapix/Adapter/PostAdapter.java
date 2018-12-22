@@ -5,6 +5,7 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
+import android.text.Html;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -71,14 +72,20 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.ViewHolder> {
             ivPostPic = itemView.findViewById(R.id.ivPostPic);
             ivProfilePic = itemView.findViewById(R.id.ivProfilePic);
          }
+
          public void bind(Post post) {
              // TODO: bind the view elements to the post
              tvHandle.setText(post.getUser().getUsername());
+             String sourceString = "<b>" + post.getUser().getUsername() + "</b> " + post.getDescription();
+             tvDescription.setText(Html.fromHtml(sourceString));
              ParseFile image = post.getImage();
              if (image != null) {
                  Glide.with(context).load(image.getUrl()).into(ivPostPic);
              }
-             tvDescription.setText(post.getDescription());
+             ParseFile imageProfile = post.getProfileImage();
+             if (imageProfile != null) {
+                 Glide.with(context).load(imageProfile.getUrl()).into(ivProfilePic);
+             }
          }
     }
 }

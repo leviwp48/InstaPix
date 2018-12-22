@@ -34,13 +34,8 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button btnPost;
-    private Button btnLogout;
-    private ImageButton camera;
+    private ImageButton btnLogout;
     private BottomNavigationView bottomNavigationView;
-    PostAdapter postAdapter;
-    ArrayList<Post> posts;
-    private SwipeRefreshLayout swipeContainer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,24 +48,6 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayShowTitleEnabled(false);
 
-
-
-        camera = findViewById(R.id.camera);
-        camera.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                goToPost();
-            }
-        });
-
-        //btnPost = findViewById(R.id.btnPost);
-        /*btnPost.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                goToPost();
-            }
-        });
-*/
         btnLogout = findViewById(R.id.btnLogout);
         btnLogout.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -89,16 +66,12 @@ public class MainActivity extends AppCompatActivity {
                 switch (menuItem.getItemId()) {
                     case R.id.action_home:
                         fragment = new PostFragment();
-                        Toast.makeText(MainActivity.this, "home!", Toast.LENGTH_LONG).show();
                         break;
                     case R.id.action_compose:
                         fragment = new ComposeFragment();
-                        Toast.makeText(MainActivity.this, "compose!", Toast.LENGTH_LONG).show();
                         break;
                     case R.id.action_profile:
                         fragment = new ProfileFragment();
-                        Toast.makeText(MainActivity.this, "profile!", Toast.LENGTH_LONG).show();
-
                     default:
                         break;
                 }

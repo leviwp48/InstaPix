@@ -8,9 +8,19 @@
         android:title="Home"
         app:showAsAction="always" />
     <item
-        android:id="@+id/action_compose"
-        android:icon="@drawable/ic_photo_camera_black_24dp"
+        android:id="@+id/action_search"
+        android:icon="@drawable/ic_search_black_24dp"
         android:title="Compose"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_compose"
+        android:icon="@drawable/ic_add_circle_outline_black_24dp"
+        android:title="Profile"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_followers"
+        android:icon="@drawable/ic_favorite_border_black_24dp"
+        android:title="Profile"
         app:showAsAction="always" />
     <item
         android:id="@+id/action_profile"

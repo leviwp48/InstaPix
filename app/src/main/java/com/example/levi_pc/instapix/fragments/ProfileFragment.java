@@ -41,7 +41,7 @@ public class ProfileFragment extends PostFragment {
                 // Your code to refresh the list here.
                 // Make sure you call swipeContainer.setRefreshing(false)
                 // once the network request has completed successfully.
-                queryPosts();
+                queryProfilePosts();
             }
         });
         // Configure the refreshing colors
@@ -50,12 +50,10 @@ public class ProfileFragment extends PostFragment {
                 android.R.color.holo_orange_light,
                 android.R.color.holo_red_light);
 
-        queryPosts();
+        queryProfilePosts();
     }
 
-    @Override
-    protected void queryPosts() {
-        super.queryPosts();
+    protected void queryProfilePosts() {
         ParseQuery<Post> postQuery = new ParseQuery<Post>(Post.class);
         postQuery.include(Post.KEY_USER);
         postQuery.setLimit(20);
