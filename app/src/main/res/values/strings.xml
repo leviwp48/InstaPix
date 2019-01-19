@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">InstaPix</string>
+    <string name="login_facebook"><u>Login with Facebook</u></string>
 </resources>

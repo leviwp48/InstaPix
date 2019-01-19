@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
+import android.text.Html;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -18,6 +19,8 @@ import com.parse.ParseUser;
 
      private EditText etUsername;
      private EditText etPassword;
+     private Button btnFacebook;
+     private Button btnForgot;
      private Button btnLogin;
      private Button btnSignUp;
 
@@ -25,10 +28,20 @@ import com.parse.ParseUser;
      protected void onCreate(Bundle savedInstanceState) {
          super.onCreate(savedInstanceState);
          setContentView(R.layout.activity_login);
-
+/*
          Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
          setSupportActionBar(toolbar);
          getSupportActionBar().setDisplayShowTitleEnabled(false);
+*/
+         btnForgot = findViewById(R.id.btnForgot);
+         String forgotString="<u>Get help signing up</u>";
+         btnForgot.setText(Html.fromHtml(forgotString));
+         btnSignUp = findViewById(R.id.btnSignUp);
+         String signupString="<u>Sign Up</u>";
+         btnSignUp.setText(Html.fromHtml(signupString));
+         btnFacebook = findViewById(R.id.btnFacebook);
+         String facebookString="<u>Login with Facebook</u>";
+         btnFacebook.setText(Html.fromHtml(facebookString));
 
          ParseUser currentUser = ParseUser.getCurrentUser();
          if(currentUser != null) {
