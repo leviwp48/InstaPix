@@ -9,25 +9,15 @@
 * User can log in and log out of his or her account.
 * The current signed in user is persisted across app restarts.
 * User can take a photo, add a caption, and post it to "Instagram".
+* User can view the last 20 posts submitted to "Instagram".
+* User can pull to refresh the last 20 posts submitted to "Instagram".
+* The user should switch between different tabs - viewing all posts (feed view), capture (camera and photo gallery view) and profile tabs (posts made) using fragments and a Bottom Navigation View. 
 
 ## To Do Features
 
 * User sees app icon in home screen and styled launch screen that looks like the real Instagram page.
-* Style the feed to look like the real Instagram feed. (2 points)
-* After the user submits a new post, show an indeterminate progress bar while the post is being uploaded to Parse (1 point)
-
-
----------------------------------------------------------------------------------
-## Part 2
-
-The following **required** functionality is completed:
-
-* User can view the last 20 posts submitted to "Instagram".
-* User can pull to refresh the last 20 posts submitted to "Instagram".
-* The user should switch between different tabs - viewing all posts (feed view), capture (camera and photo gallery view) and profile tabs (posts made) using fragments and a Bottom Navigation View. (2 points)
-
-The following **optional** features are implemented:
-
+* Style the feed to look like the real Instagram feed. 
+* After the user submits a new post, show an indeterminate progress bar while the post is being uploaded to Parse 
 * Style the feed to look like the real Instagram feed.
 * User can load more posts once he or she reaches the bottom of the feed using infinite scrolling.
 * Show the username and creation time for each post.
