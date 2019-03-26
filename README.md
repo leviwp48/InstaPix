@@ -3,6 +3,12 @@
 
 **Instapix** is a photo sharing app similar to Instagram but using Parse as its backend.
 
+## Video Walkthrough
+
+Here's a walkthrough of implemented user stories:
+
+<img src='https://github.com/leviwp48/InstaPix/blob/master/InstaPix2.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
 ## App Features
 
 * User can sign up to create a new account using Parse authentication.
@@ -29,12 +35,6 @@
 * User can comment on a post and see all comments for each post in the post details screen.
 * User can like a post and see number of likes for each post in the post details screen.
 * Run your app on your phone and use a custom camera view
-
-## Video Walkthrough
-
-Here's a walkthrough of implemented user stories:
-
-<img src='https://github.com/leviwp48/InstaPix/blob/master/InstaPix2.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 ## Open-source libraries used
 
